@@ -2,7 +2,7 @@
 
 This repository contains a starter scaffolding to get you up and running quickly on [WP Engine's Atlas platform](https://wpengine.com/atlas/) with a WordPress site skeleton for more advanced developers.
 
-## For more information
+## Handy Information Tidbits
 
 For more information on this Blueprint please check out the following sources:
 
@@ -11,3 +11,4 @@ For more information on this Blueprint please check out the following sources:
 - [WPGraphQL](https://www.wpgraphql.com)
 - [Atlas Content Modeler](https://wordpress.org/plugins/atlas-content-modeler/)
 - [WP Engine's Atlas developer community](https://developers.wpengine.com)
+- [Preview Deployments and Webhook How-Tos](https://developers.wpengine.com/docs/atlas/additional-guides/preview-environments)
