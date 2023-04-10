@@ -5,8 +5,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       Powered by{" "}
       <a href="https://wpengine.com" target="_blank" rel="noopener noreferrer">
-        WP Engine
+        WP Engine ...
       </a>
+      <p> and a little bit of Disney Plus</p>
     </footer>
   );
 }

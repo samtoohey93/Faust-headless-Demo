@@ -5,11 +5,32 @@ import Header from "../components/header";
 import EntryHeader from "../components/entry-header";
 import Footer from "../components/footer";
 import style from "../styles/front-page.module.css";
+import Image from "next/image";
 
 export default function Component(props) {
   const { title: siteTitle, description: siteDescription } =
     props.data.generalSettings;
   const menuItems = props.data.primaryMenuItems.nodes;
+  const snow1 = ({ src, width, quality }) => {
+    return `https://media.giphy.com/media/5h3MrrvoFNgmA/giphy.gif${src}?w=${width}&q=${
+      quality || 100
+    }`;
+  };
+  const snow2 = ({ src, width, quality }) => {
+    return `https://media.giphy.com/media/AoxD8DtSy7MCA/giphy.gif${src}?w=${width}&q=${
+      quality || 100
+    }`;
+  };
+  const snow3 = ({ src, width, quality }) => {
+    return `https://media.giphy.com/media/WmhWN5VCNsBGg/giphy.gif${src}?w=${width}&q=${
+      quality || 100
+    }`;
+  };
+  const snow4 = ({ src, width, quality }) => {
+    return `https://media.giphy.com/media/ztCmrnCN7jvby/giphy.gif${src}?w=${width}&q=${
+      quality || 100
+    }`;
+  };
 
   return (
     <>
@@ -24,8 +45,11 @@ export default function Component(props) {
       />
 
       <main className="container">
+<<<<<<< Updated upstream
         <EntryHeader title="Welcome to the Faust Scaffold Blueprint" />
 
+=======
+>>>>>>> Stashed changes
         <section className={style.cardGrid}>
           <Link
             href="https://faustjs.org"
@@ -72,6 +96,40 @@ export default function Component(props) {
             <h3>Contribute →</h3>
             <p>Visit us on GitHub to explore how you can contribute!</p>
           </Link>
+        </section>
+        <div className="breakup"> {""}</div>
+        <br></br>
+        <EntryHeader title="Nova... do you wanna build a snowman?" />
+
+        <section className={style.cardGrid}>
+          <Image
+            className="snow"
+            loader={snow1}
+            src="https://media.giphy.com/media/5h3MrrvoFNgmA/giphy.gif"
+            width={300}
+            height={300}
+          />
+          <Image
+            className="snow"
+            loader={snow2}
+            src="https://media.giphy.com/media/AoxD8DtSy7MCA/giphy.gif"
+            width={300}
+            height={300}
+          />
+          <Image
+            className="snow"
+            loader={snow3}
+            src="https://media.giphy.com/media/WmhWN5VCNsBGg/giphy.gif"
+            width={300}
+            height={300}
+          />
+          <Image
+            className="snow"
+            loader={snow4}
+            src="https://media.giphy.com/media/ztCmrnCN7jvby/giphy.gif"
+            width={300}
+            height={300}
+          />
         </section>
       </main>
 
